@@ -7,6 +7,8 @@ const answerSchema = new mongoose.Schema({
 
 const questionSchema = new mongoose.Schema({
     question: String,
+    // parentCategory: String,
+    category: String,
     answers: [answerSchema],
 }, {
     timestamps: true
